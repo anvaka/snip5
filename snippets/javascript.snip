@@ -1,0 +1,25 @@
+snippet function
+alias f
+options head
+	function ${1:function_name}() {
+	  ${0}
+	}
+
+snippet console-log
+alias cl
+options head
+  console.log(${0});
+
+snippet require
+alias r
+  require('${0}');
+
+snippet for
+options head
+  for (var ${1} = 0; $1 < ${2}; ++$1) {
+    ${0}
+  }
+
+snippet mod
+options head
+  module.exports = ${0};
