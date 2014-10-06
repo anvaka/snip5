@@ -1,7 +1,8 @@
 snippet function
 alias f
+alias fun
 options head
-	function ${1:function_name}() {
+	function ${1}() {
 	  ${0}
 	}
 
@@ -23,3 +24,12 @@ options head
 snippet mod
 options head
   module.exports = ${0};
+
+snippet raf
+  requestAnimationFrame(${1:renderFrame});
+
+  function $1() {
+    requestAnimationFrame($1);
+    ${0}
+  }
+
