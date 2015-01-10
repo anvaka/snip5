@@ -1,0 +1,20 @@
+snippet ex "Export" b
+module.exports = ${0};
+endsnippet
+
+snippet r "rhs require" b
+require('$1');
+endsnippet
+
+snippet test "test (tap)" b
+test('${1:description}', function(t) {
+  $0
+  t.end();
+});
+endsnippet
+
+snippet for
+for (var ${1} = 0; $1 < ${2}; ++$1) {
+  ${0}
+}
+endsnippet
