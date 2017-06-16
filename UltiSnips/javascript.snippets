@@ -19,14 +19,14 @@ snippet "^([^=]*)= r" "commonjs require" r
 endsnippet
 
 snippet test "test (tap)" b
-test('${1:description}', function(t) {
+test('${1:description}', (t) => {
   $0
   t.end();
 });
 endsnippet
 
 snippet for
-for (var ${1} = 0; $1 < ${2}; ++$1) {
+for (let ${1} = 0; $1 < ${2}; ++$1) {
   ${0}
 }
 endsnippet
